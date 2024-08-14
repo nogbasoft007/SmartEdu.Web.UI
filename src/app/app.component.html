@@ -1,15 +1,9 @@
-<!-- <main class="main">
-  <div class="content">
-    <div class="left-side">
-      <h1>Hello, {{ title }}</h1>
-      <p-button label="Ok"></p-button>
-    </div>
-  </div>
-</main>
-<router-outlet /> -->
+<app-main-header></app-main-header>
+<app-main-topbar></app-main-topbar>
 
-<div class="card">
-  <p-menubar [model]="items" />
-</div>
+<app-main-layout>
+  <!-- This could be your router outlet or other content -->
+  <router-outlet></router-outlet>
+</app-main-layout>
 
-<router-outlet /> 
+<app-main-footer></app-main-footer>

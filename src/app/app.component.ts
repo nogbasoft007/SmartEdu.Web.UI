@@ -3,6 +3,10 @@ import { RouterOutlet } from '@angular/router';
 import { MenuItem } from 'primeng/api';
 import {ButtonModule} from 'primeng/button';
 import {MenubarModule} from 'primeng/menubar'
+import { MainLayoutComponent } from "./layouts/main-layout/main-layout.component";
+import { MainHeaderComponent } from "./layouts/main-header/main-header.component";
+import { MainTopbarComponent } from "./layouts/main-topbar/main-topbar.component";
+import { MainFooterComponent } from "./layouts/main-footer/main-footer.component";
 
 @Component({
   selector: 'app-root',
@@ -10,8 +14,12 @@ import {MenubarModule} from 'primeng/menubar'
   imports: [
     RouterOutlet,
     ButtonModule,
-    MenubarModule
-  ],
+    MenubarModule,
+    MainLayoutComponent,
+    MainHeaderComponent,
+    MainTopbarComponent,
+    MainFooterComponent
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
