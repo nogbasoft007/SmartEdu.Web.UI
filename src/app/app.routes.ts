@@ -2,6 +2,10 @@ import { Routes } from '@angular/router';
 
 import { StudentsComponent } from './components/students/students.component';
 import { TeachersComponent } from './components/teachers/teachers.component';
+import { FeesComponent } from './components/fees/fees.component';
+import { SubjectsComponent } from './components/subjects/subjects.component';
+import { ExamsComponent } from './components/exams/exams.component';
+import { AttendancesComponent } from './components/attendances/attendances.component';
 
 export const routes: Routes = [
 
@@ -12,5 +16,25 @@ export const routes: Routes = [
     {
         path: 'teachers',
         component: TeachersComponent
+    },
+    {
+        path: 'fees',
+        component: FeesComponent
+    },
+    {
+        path: 'subjects',
+        component: SubjectsComponent
     }
+    ,
+    {
+        path: 'exams',
+        component: ExamsComponent
+    }
+    ,
+    {
+        path: 'attendances',
+        component: AttendancesComponent
+    }
+
+
 ];
