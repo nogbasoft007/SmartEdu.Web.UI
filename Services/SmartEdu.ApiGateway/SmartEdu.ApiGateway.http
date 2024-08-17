@@ -1,0 +1,6 @@
+@SmartEdu.ApiGateway_HostAddress = http://localhost:5048
+
+GET {{SmartEdu.ApiGateway_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
