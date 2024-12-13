@@ -1,0 +1,39 @@
+.student-container {
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100vh; /* Full viewport height */
+  width: 100%; /* Full width */
+}
+
+.sidebar {
+  width: 180px; /* Smaller width for sidebar */
+  padding: 0.5rem; /* Reduced padding */
+  background-color: #f4f4f4; /* Light grey background */
+  border-right: 1px solid #ddd;
+  flex-shrink: 0; /* Prevent the sidebar from shrinking */
+}
+
+.student-list-view {
+  flex: 1; /* Take the remaining space */
+  padding: 0.5rem; /* Reduced padding */
+  overflow-y: auto; /* Enable vertical scrolling if needed */
+  margin-left: 0.5rem; /* Smaller gap between sidebar and list view */
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* Smaller gap between filters */
+}
+
+p-dropdown {
+  font-size: 0.875rem; /* Smaller font size */
+}
+
+.ui-panel {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.875rem; /* Smaller font size for panel */
+}

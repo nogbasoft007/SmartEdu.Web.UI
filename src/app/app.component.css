@@ -20,7 +20,7 @@ app-main-topbar {
 
 app-main-layout {
   flex-grow: 1;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
   background-color: #ffffff;

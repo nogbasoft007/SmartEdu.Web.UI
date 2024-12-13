@@ -1,43 +1,54 @@
-/* app-main-header.component.scss */
-
-
 .app-main-header {
-  display: flex; /* Applies Flexbox layout to the component */
-  justify-content: space-between; /* Distributes child elements (logo and nav) to the extremes */
-  align-items: center; /* Vertically centers child elements */
-  background-color: #042940; /* Sets a background color for the header */
-  color: #ffffff; /* Sets text color for all text inside the header */
-  padding: 0.5rem 1rem; /* Adds padding inside the header for spacing */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for visual depth */
-  font-size: 1rem; /* Sets the font size for text inside the header */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #032C69;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
 }
-
-
+.li{
+  font-size: .688rem;
+  padding: 3px 15px;
+  font-weight: 600;
+  display: flex;
+  border-top: solid 4px transparent;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .logo {
   display: flex;
   align-items: center;
-  font-weight: 600; /* Slightly bolder font weight */
+  font-weight: 600;
 }
 
 .logo img {
-  height: 30px; /* Smaller logo image */
-  margin-right: 0.5rem; /* Reduced space between image and text */
+  height: 30px;
+  margin-right: 0.5rem;
 }
 
 .logo span {
-  font-size: 0.875rem; /* Smaller font size for the logo text */
+  font-size: 0.875rem;
 }
 
-.navigation {
+.navigation ul {
   display: flex;
-  gap: 1rem; /* Reduced gap between navigation links */
+  gap: 1rem;
+  list-style-type: none; /* Remove default bullet points */
+  margin: 0;
+  padding: 0;
+}
+
+.navigation li {
+  font-size: 0.875rem;
 }
 
 .navigation a {
   color: #ffffff;
   text-decoration: none;
-  font-weight: 500; /* Slightly lighter font weight */
-  font-size: 0.875rem; /* Smaller font size for navigation items */
+  font-weight: 500;
   transition: color 0.3s ease;
 }
 

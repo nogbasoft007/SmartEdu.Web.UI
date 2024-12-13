@@ -1,0 +1,91 @@
+.attendance-container {
+    padding: 1.5rem;
+    background-color: #f4f7fc;
+    min-height: 100vh;
+  }
+  
+  .attendance-header {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  
+    h2 {
+      font-size: 2rem;
+      color: #2c3e50;
+    }
+  }
+  
+  .attendance-summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  .attendance-stat {
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+  
+    .stat-content {
+      display: flex;
+      align-items: center;
+    }
+  
+    .stat-icon {
+      font-size: 2.5rem;
+      margin-right: 1rem;
+      color: #3498db; /* Default icon color */
+    }
+  
+    .stat-info {
+      p {
+        margin: 0;
+        font-size: 0.9rem;
+        color: #7f8c8d;
+      }
+  
+      h3 {
+        margin: 0;
+        font-size: 1.5rem;
+        color: #34495e;
+      }
+    }
+  
+    &.total .stat-icon {
+      color: #3498db; /* Blue */
+    }
+  
+    &.present .stat-icon {
+      color: #2ecc71; /* Green */
+    }
+  
+    &.absent .stat-icon {
+      color: #e74c3c; /* Red */
+    }
+  
+    &.overall {
+      display: block;
+  
+      .stat-content {
+        display: block;
+      }
+    }
+  }
+  
+  .recent-attendance {
+    margin-top: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  

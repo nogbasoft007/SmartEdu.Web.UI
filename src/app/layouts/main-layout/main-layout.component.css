@@ -1,18 +1,16 @@
-/* app-main-layout.component.scss */
-
 :host {
   display: block;
   flex-grow: 1;
-  padding: 2rem;
+  padding: 1rem; /* Reduced padding */
   background-color: #F9F9F9;
-  border-radius: 8px;
-  margin: 1.5rem 2rem;
+  border-radius: 4px; /* Smaller border radius */
+  margin: 0.5rem 1rem; /* Reduced margin */
   overflow-y: auto;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Smaller box shadow */
 }
 
 .content {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem; /* Reduced gap */
 }

@@ -1,0 +1,16 @@
+p-table {
+  font-size: 0.875rem; /* Smaller font size for table */
+}
+
+p-table th, p-table td {
+  padding: 0.5rem; /* Reduced padding in table cells */
+  font-size: 0.875rem; /* Smaller font size for text */
+}
+
+p-table .ui-paginator {
+  font-size: 0.75rem; /* Even smaller font for pagination controls */
+}
+
+p-table .ui-paginator .ui-paginator-pages .ui-paginator-page {
+  padding: 0.25rem 0.5rem; /* Reduced padding for pagination buttons */
+}
